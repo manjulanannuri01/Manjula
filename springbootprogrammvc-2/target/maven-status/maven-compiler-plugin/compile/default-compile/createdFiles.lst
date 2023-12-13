@@ -1,0 +1,6 @@
+com\example\demo\model\EdmsData.class
+com\example\demo\Service\EDMSServicecls.class
+com\example\demo\Springbootprogrammvc2Application.class
+com\example\demo\dispachservlet\UploadController.class
+com\example\demo\controller\EDMSController.class
+com\example\demo\Repository\EdmsRepository.class
