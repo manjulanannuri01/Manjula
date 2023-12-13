@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+  background-color:pink;
+ 
+}
+</style>
+<body>
+<script >
+function checkFileSize(input){
+	if(input.files && input.files[0])
+		{
+		const fileSize = input.files[0].size;
+		const maxSize =600000;
+		if(fileSize>maxSize)
+			{
+			alert("file size must be lessthen 600mb");
+			input.value="";
+			
+			}else
+				{
+				alert("successfully upload image");
+				
+				
+				}
+		}
+}
+
+</script>
+</body>
+
+<title>UPLOAD DOCUMENT</title>
+</head>
+<body>
+<style>
+    form{
+    
+       width:400px;
+       height:500px;
+       border: solid;
+       border-color: green;
+    }
+ </style>
+<center>
+<form action="ser_upload" method="post"enctype="multipart/form-data">
+<h5><b>UPLOAD DOCUMENT</b></h5>
+Email           <input type="text" name="email"></br></br>
+Password        <input type="password" name="password"></br></br>
+Customer ID     <input type="text"name="customerid"></br></br>
+Documentname<select name="documentname" >
+                <option>none</option>
+                <option> pan card</option>
+                <option>aadhar card</option>    
+         		<option>passphot</option>
+         		<option> driving licence</option>
+       		    <option>voter Id</option>
+                </select></br></br>
+Asset<select name="asset">
+                <option>none</option>
+        		<option> house loan</option>
+         		<option>car loan</option>
+         		<option>gold loan</option>
+        		<option>study loan</option>
+         		</select></br></br>
+   Document Type   <input type="text" name="documenttype"></br></br>
+
+   
+   SELECT IMG:  <input type="file" name="image"/></br></br>
+   </div>
+ 			<input type="submit"value="click"> </br></br>
+  
+</form>
+</center>
+</body>
+</html>
