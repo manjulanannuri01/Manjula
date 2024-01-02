@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author UNIFY
+ *
+ */
+module HashMap {
+}
